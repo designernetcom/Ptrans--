@@ -4522,7 +4522,7 @@ color:#111;
 .center .wt-small-separator div.sep-leaf-left:before{
 	position: absolute;
 	content: '';	
-	background-color:#ff5e15;
+	background-color:#005dad;
 	width: 40px;
 	height: 3px;
 	bottom: 0px;	
@@ -10705,7 +10705,7 @@ transform:skewX(24deg);
     left: 0px;
     top: 5px;
     font-size: 18px;
-	color:#fff;
+	color: #fff !important;
 }
 
 
