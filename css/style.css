@@ -2743,6 +2743,7 @@ ol.list-num-count.list-outline-none>li:before {
 }
 
 .overlay-main {
+	background: linear-gradient(135deg, #00325e, #000c1f, #00116e);
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -8942,7 +8943,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	-moz-border-radius: 0;
 	color: #fff;
 	font-size: 14px;
-	padding: 35px 10px;
+	padding: 35px 17px;
 	cursor: pointer;
 	margin: -10px 0;
 

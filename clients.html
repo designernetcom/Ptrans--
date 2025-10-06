@@ -314,7 +314,8 @@
 <style>
     /* Clients Section */
 .clients-section {
-  padding: 50px 20px;
+      padding: 50px 70px;
+
   text-align: center;
 }
 
@@ -393,13 +394,13 @@
                             	<div class="col-lg-5 col-md-4">
                                     <div class="widget widget_services">
                                         <h3 class="widget-title">Useful links</h3>
-                                        <ul>
-                                            <li><a href="index-2.html">Home</a></li>
-                                            <li><a href="">About</a></li>
-                                            <li><a href="">Services</a></li>
-                                            <li><a href="">Project</a></li>                                         
-                                            <li><a href="clients.html">Our clients</a></li>
-                                            <li><a href="contact-1.html">Contact</a></li>
+                                       <ul>
+                                             <li><a href="index-2.html">Home</a><a href="">About</a></li>
+                                            <!-- <li></li> -->
+                                            <li><a href="">Services</a><a href="">Project</a></li>
+                                            <!-- <li></li> -->
+                                            <li><a href="clients.html">Our clients</a><a href="contact-1.html">Contact</a></li>
+                                            <!-- <li></li> -->
                                         </ul>
                                     </div>
                             	</div>
@@ -418,8 +419,100 @@
                             	</div>                                
                             
                             </div>
+
+                            <div class="col-lg-3 col-sm-6">
+  <div class="footer-location-container wow fadeInUp" data-wow-delay="1.2s">
+    <h4 class="footer-heading">Our Location</h4>
+
+    <!-- Google Map Section -->
+    <div class="footer-map-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15141.318027583864!2d73.83010958557499!3d18.423342372419782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPlot%20No.5%2C%20Survey%20No.%2047%2C%20Near%20Mudra%20Hill%20Top%20Hotel%2C%20Mangadewadi%20-%20Kolewadi%20Road%2C%20Mangadewadi%2C%20PUNE%20-%20411046%2C%20INDIA!5e0!3m2!1sen!2sin!4v1755510442952!5m2!1sen!2sin"
+        width="100%"
+        height="250"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<style>
+/* ====== Footer Location Section ====== */
+.footer-location-container {
+  color: #fff;
+  padding: 15px 0;
+}
+
+.footer-heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+
+/* ====== Map Styling ====== */
+.footer-map-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-map-wrapper iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Hover Animation */
+.footer-map-wrapper:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(28, 99, 184, 0.4);
+}
+
+/* ====== Responsive ====== */
+
+/* Tablets (768px–991px) */
+@media (max-width: 991px) {
+  .footer-location-container {
+    text-align: center;
+  }
+
+  .footer-heading::after {
+    margin: 5px auto;
+  }
+
+  .footer-map-wrapper iframe {
+    height: 220px;
+  }
+}
+
+/* Mobile Devices (up to 600px) */
+@media (max-width: 600px) {
+  .footer-location-container {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .footer-heading {
+    font-size: 18px;
+  }
+
+  .footer-map-wrapper iframe {
+    height: 200px;
+  }
+}
+</style>
                             
-                            <div class="widget widget_newsletter">
+                            <!-- <div class="widget widget_newsletter">
                                 <h3 class="widget-title">Newsletter</h3>
                                 	<p>Subscribe to our newsletter to receive latest news on our services.</p>
                                     <div class="newsletter-input">
@@ -430,7 +523,7 @@
                                         </div>
                                       </div>
                                     </div>
-                            </div>
+                            </div> -->
                             
                         </div> 
 

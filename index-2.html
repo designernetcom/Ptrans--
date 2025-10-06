@@ -593,7 +593,7 @@
 
 .section-title .subtitle {
   display: inline-block;
-  color: #0078d7;
+  color: #005dad;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -644,7 +644,7 @@
 
 .btn-more {
   display: inline-block;
-  background: #0078d7;
+  background: #005dad;
   color: #fff;
   padding: 10px 25px;
   border-radius: 25px;
@@ -690,7 +690,7 @@
   position: absolute;
   top: 10%;
   left: -30px;
-  background: #0078d7;
+  background: #005dad;
   color: #fff;
   padding: 15px 25px;
   border-radius: 10px;
@@ -824,9 +824,182 @@
 
 <style>
 
+/* Section Container */
+.vision-mission-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
 
+/* Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    color: #005dad;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.section-header h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: #0a6ebd;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Cards Container with diagonal split */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+/* Vision Card */
+.card {
+    flex: 1 1 400px;
+    min-width: 300px;
+    max-width: 500px;
+    background: linear-gradient(135deg, #005dad, #949494);
+    color: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+}
+
+/* Decorative circle on card */
+.card::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 50%;
+    top: -40px;
+    right: -40px;
+    z-index: 1;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    z-index: 2;
+    position: relative;
+    color: white;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    z-index: 2;
+    position: relative;
+}
+
+/* Mission Card different color */
+.card.mission {
+    background: linear-gradient(135deg, #ff7f50, #ff6347);
+}
+
+.card.mission::before {
+    top: -30px;
+    left: -30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        padding: 30px 20px;
+    }
+
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+    }
+
+    .card p {
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 600px) {
+  .card {
+
+    max-height: 195px; /* removes height limit for better text wrapping */
+    
+  }
+}
     
 </style>
+
+
+
+<section class="vision-mission-section">
+    <div class="section-header">
+        <h2>Committed to Innovation & Reliable Solutions</h2>
+        <p>Our Vision & Mission drive us to deliver excellence in Process Control and Automation.</p>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Our Vision</h3>
+            <p>To become the Preferred Partner and Solution Provider in the Process Control and Automation Industry.</p>
+        </div>
+
+        <div class="card">
+            <h3>Our Mission</h3>
+            <p>To provide Continuous Value Addition to our Customers by offering Reliable, Cost-effective, and Customized Solutions.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
             <!-- ABOUT SECTION  SECTION END -->   
 
                         <div class="section-full p-t80 p-b50  overlay-wraper bg-cover bg-no-repeat" style="background-image:url(images/background/bg-5.jpg);">
@@ -1559,12 +1732,12 @@
                                     <div class="widget widget_services">
                                         <h3 class="widget-title" style="color: white;">Useful links</h3>
                                         <ul>
-                                             <li><a href="index-2.html">Home</a></li>
-                                            <li><a href="">About</a></li>
-                                            <li><a href="">Services</a></li>
-                                            <li><a href="">Project</a></li>                                         
-                                            <li><a href="clients.html">Our clients</a></li>
-                                            <li><a href="contact-1.html">Contact</a></li>
+                                             <li><a href="index-2.html">Home</a><a href="">About</a></li>
+                                            <!-- <li></li> -->
+                                            <li><a href="">Services</a><a href="">Project</a></li>
+                                            <!-- <li></li> -->
+                                            <li><a href="clients.html">Our clients</a><a href="contact-1.html">Contact</a></li>
+                                            <!-- <li></li> -->
                                         </ul>
                                     </div>
                             	</div>
@@ -1583,8 +1756,102 @@
                             	</div>                                
                             
                             </div>
+
+<div class="col-lg-3 col-sm-6">
+  <div class="footer-location-container wow fadeInUp" data-wow-delay="1.2s">
+    <h4 class="footer-heading">Our Location</h4>
+
+    <!-- Google Map Section -->
+    <div class="footer-map-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15141.318027583864!2d73.83010958557499!3d18.423342372419782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPlot%20No.5%2C%20Survey%20No.%2047%2C%20Near%20Mudra%20Hill%20Top%20Hotel%2C%20Mangadewadi%20-%20Kolewadi%20Road%2C%20Mangadewadi%2C%20PUNE%20-%20411046%2C%20INDIA!5e0!3m2!1sen!2sin!4v1755510442952!5m2!1sen!2sin"
+        width="100%"
+        height="250"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<style>
+/* ====== Footer Location Section ====== */
+.footer-location-container {
+  color: #fff;
+  padding: 15px 0;
+}
+
+.footer-heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+
+/* ====== Map Styling ====== */
+.footer-map-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-map-wrapper iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Hover Animation */
+.footer-map-wrapper:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(28, 99, 184, 0.4);
+}
+
+/* ====== Responsive ====== */
+
+/* Tablets (768px–991px) */
+@media (max-width: 991px) {
+  .footer-location-container {
+    text-align: center;
+  }
+
+  .footer-heading::after {
+    margin: 5px auto;
+  }
+
+  .footer-map-wrapper iframe {
+    height: 220px;
+  }
+}
+
+/* Mobile Devices (up to 600px) */
+@media (max-width: 600px) {
+  .footer-location-container {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .footer-heading {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .footer-map-wrapper iframe {
+    height: 200px;
+  }
+}
+</style>
+
                             
-                            <div class="widget widget_newsletter">
+                            <!-- <div class="widget widget_newsletter">
                                 <h3 class="widget-title" style="color: white;">Newsletter</h3>
                                 	<p>Subscribe to our newsletter to receive latest news on our services.</p>
                                     <div class="newsletter-input">
@@ -1595,7 +1862,7 @@
                                         </div>
                                       </div>
                                     </div>
-                            </div>
+                            </div> -->
                             
                         </div> 
 
