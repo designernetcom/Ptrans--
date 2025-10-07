@@ -127,9 +127,9 @@
                                                        
                             <div class="extra-nav header-2-nav">
                                 <div class="extra-cell">
-                                    <div class="header-search">
+                                    <!-- <div class="header-search">
                                         <a href="javascript:void(0);" class="header-search-icon"><i class="fa fa-search"></i></a>
-                                    </div>                                
+                                    </div>                                 -->
                                     <div class="header-nav-request">
                                         <a href="contact-1.html" class="contact-slide-show">Request a Quote <i class="fa fa-angle-right"></i></a>
                                     </div>
@@ -160,27 +160,31 @@
                                         </ul>                                  -->
                                     </li>
                                     
-                                    <li><a href="javascript:;">About</a>
+                                    <li><a href="aboutus.html">About</a>
                                         <!-- <ul class="sub-menu">
                                             <li><a href="about-1.html">About 1</a></li>                                        
                                             <li><a href="about-2.html">About 2</a></li>
                                         </ul>                                 -->
                                     </li>                                    
-                                    <li><a href="javascript:;">Services</a>
-                                        <!-- <ul class="sub-menu">
-                                            <li><a href="services-1.html">Services one</a></li>                                        
-                                            <li><a href="services-2.html">Services Two</a></li>
-                                            <li><a href="s-agricultural.html">Agricultural Automation</a></li>
-                                            <li><a href="s-automotive.html">Automotive Manufacturing</a></li>
-                                            <li><a href="s-chemical.html">Chemical Research</a></li>
-                                            <li><a href="s-civil.html">Civil Engineering</a></li>
-                                            <li><a href="s-mechanical.html">Mechanical Engineering</a></li>
-                                            <li><a href="s-oilgas.html">Oil & Gas Engineering</a></li>
-                                            <li><a href="s-power-energy.html">Power & Energy Sector</a></li>                                              
+                                    <li><a href="javascript:;">Products</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">Electromagnetic Flow Meters</a></li>                                        
+                                            <li><a href="">Ultrasonic Flow Meter</a></li>
+                                            <li><a href="">Water Meter PTC</a></li>
+                                            <li><a href="">Ultrasonic LEVEL Meter</a></li>
+                                            <li><a href="">Radar Level Transmitter</a></li>
+                                            <li><a href="">Hydrostatic Level Transmitters</a></li>
+                                            <li><a href="">BTU Meter</a></li>
+                                            <li><a href="">Pressure Transmitters</a></li>
+                                            <li><a href="">Smart Pressure Trasmitters</a></li>  
+                                            <li><a href="">Sensors & Transmitters</a></li>                                        
+                                            <li><a href="">Indicators & Controllers</a></li>
+                                            <li><a href="">Customized Displays</a></li>
+                                            <li><a href="">Cloud Storage Devices</a></li>                                             
                                                                                        
-                                        </ul>                                 -->
+                                        </ul>                                
                                     </li>
-                                    <li><a href="javascript:;">Project</a>
+                                    <li><a href="javascript:;">Our Recognition</a>
                                         <!-- <ul class="sub-menu">
                                             <li><a href="project-grid.html">Project Grid</a></li>                                        
                                             <li><a href="project-masonry.html">Project Masonry</a></li>
@@ -1000,13 +1004,324 @@
 
 
 
+
+<style>
+/* --- General Reset --- */
+
+
+/* --- Service Gallery Container --- */
+.services-gallery-style2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* --- Service Item Box --- */
+.service-box-style2 {
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.service-box-style2:hover {
+  transform: translateY(-5px);
+}
+
+/* --- Image Section --- */
+.service-media {
+  width: 100%;
+  height: 300px; /* same height for all */
+  overflow: hidden;
+}
+
+.service-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* maintain aspect ratio and fill box */
+  display: block;
+}
+
+/* --- Content Section --- */
+.service-content {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.service-content h3 {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.service-content p {
+  font-size: 0.9rem;
+  color: #555;
+  min-height: 60px;
+  margin-bottom: 12px;
+}
+
+.site-button {
+  display: inline-block;
+  background: #004aad;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.site-button:hover {
+  background: #002e6b;
+}
+
+/* --- Responsive Layouts --- */
+
+/* Large screens */
+@media (min-width: 992px) {
+  .services-gallery-style2 {
+    justify-content: space-between;
+  }
+  .service-box-style2 {
+    flex: 0 0 calc(33.33% - 20px);
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 991px) and (min-width: 600px) {
+  .service-box-style2 {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 599px) {
+  .service-box-style2 {
+    flex: 0 0 100%;
+  }
+
+  .service-content h3 {
+    font-size: 1rem;
+  }
+
+  .service-content p {
+    font-size: 0.85rem;
+  }
+
+  .service-media {
+    height: 300px;
+  }
+}
+</style>
+
+
+
+            <!-- SERVICES SECTION START -->
+            <div class="section-full  service-gallery-style1-wrapper">
+                
+                    <div class="services-gallery-block-outer">
+                        <div class="container half-wide-bg-outer p-t90 p-b50 ">
+                            <div class="half-wide-bg"></div>
+                            <div class="section-content"> 
+                                <div class="row">
+                        
+                                    <div class="col-lg-4 col-md-12 m-b30">
+                                        
+                                        <!-- TITLE START-->
+                                        <div class="section-head left wt-small-separator-outer text-white">
+                                            <div class="wt-small-separator site-text-white">
+                                                <div>Our Products</div>
+                                            </div>
+                                            <h2 class="wt-title">Reliable process control and automation solutions.</h2>
+                                            <p>We provide high-quality sensors, controllers, indicators, and automation products 
+                                                with reliable performance, competitive pricing, and timely delivery - making us 
+                                                a trusted name in process control solutions.</p>
+
+                                            <a href="" class="site-button-secondry site-btn-effect">Explore all products</a>
+                                            
+                                        </div>
+                                        <!-- TITLE END-->
+                                        
+                                        
+                                                                    
+                                    </div>
+                    
+                                    <div class="col-lg-8 col-md-12">
+                                        <div class="services-gallery-style2">
+                                            <div class="owl-carousel services-gallery-two owl-btn-vertical-center ">
+                                            
+                                                <!-- COLUMNS 1 --> 
+                                                <div class="item ">
+                                                    <div class="service-box-style2">
+                                                        <div class="service-media">
+                                                            <img src="images/electromagnetic.jpg" alt="">
+                                                        </div>
+                                                        <div class="service-content">
+                                                            <h3 class="service-title-large"><a href="">Electromagnetic Flow Meters</a></h3>
+                                                            <p>Battery Operated Electromagnetic Flow Meters for accurate liquid measurement.</p>
+                                                            <a href="" class="site-button site-btn-effect">View All</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- COLUMNS 2 --> 
+                                                <div class="item ">
+                                                    <div class="service-box-style2">
+                                                        <div class="service-media">
+                                                            <img src="images/ultrasonic.jpg" alt="">
+                                                        </div>
+                                                        <div class="service-content">
+                                                            <h3 class="service-title-large"><a href="">Ultrasonic Flow Meter</a></h3>
+                                                            <p>Reliable ultrasonic flow meters and residential water meter PTC solutions.</p>
+                                                            <a href="" class="site-button site-btn-effect">View All</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- COLUMNS 3 --> 
+                                                <div class="item ">
+                                                    <div class="service-box-style2">
+                                                        <div class="service-media">
+                                                            <img src="images/level-meter.jpg" alt="">
+                                                        </div>
+                                                        <div class="service-content">
+                                                            <h3 class="service-title-large"><a href="">Ultrasonic Level Meter</a></h3>
+                                                            <p>PTC800W 80GHz Radar Level Transmitter, Radar Gauges & Hydrostatic Transmitters.</p>
+                                                            <a href="" class="site-button site-btn-effect">View All</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- COLUMNS 4 --> 
+                                                <div class="item ">
+                                                    <div class="service-box-style2">
+                                                        <div class="service-media">
+                                                            <img src="images/btu.jpg" alt="">
+                                                        </div>
+                                                        <div class="service-content">
+                                                            <h3 class="service-title-large"><a href="">BTU Meter (Heat Meter)</a></h3>
+                                                            <p>Accurate BTU/Heat Meters designed for industrial & commercial monitoring.</p>
+                                                            <a href="" class="site-button site-btn-effect">View All</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- COLUMNS 5 --> 
+                                                <div class="item ">
+                                                    <div class="service-box-style2">
+                                                        <div class="service-media">
+                                                            <img src="images/pressure-transmitters.webp" alt="">
+                                                        </div>
+                                                        <div class="service-content">
+                                                            <h3 class="service-title-large"><a href="">Pressure Transmitters</a></h3>
+                                                            <p>Smart Pressure & Differential Pressure Transmitters with high accuracy.</p>
+                                                            <a href="" class="site-button site-btn-effect">View All</a>
+                                                        </div>
+                                                    </div>
+                                                </div>   
+                                                
+                                                <!-- COLUMNS 6 --> 
+                                                <div class="item ">
+                                                    <div class="service-box-style2">
+                                                        <div class="service-media">
+                                                            <img src="images/sensors.jpg" alt="">
+                                                        </div>
+                                                        <div class="service-content">
+                                                            <h3 class="service-title-large"><a href="">Sensors & Transmitters</a></h3>
+                                                            <p>RTD, Thermocouple, PH, Chlorine & Turbidity Sensors for industrial needs.</p>
+                                                            <a href="" class="site-button site-btn-effect">View All</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- COLUMNS 7 --> 
+                                                <div class="item ">
+                                                    <div class="service-box-style2">
+                                                        <div class="service-media">
+                                                            <img src="images/panel&wall.jpg" alt="">
+                                                        </div>
+                                                        <div class="service-content">
+                                                            <h3 class="service-title-large"><a href="">Panel & Wall Controllers</a></h3>
+                                                            <p>Panel and Wall Mounted Indicators & Controllers for real-time monitoring and control in industrial applications.</p>
+                                                            <a href="" class="site-button site-btn-effect">View All</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- COLUMNS 8 --> 
+                                                <div class="item ">
+                                                    <div class="service-box-style2">
+                                                        <div class="service-media">
+                                                            <img src="images/custome-display.jpg" alt="">
+                                                        </div>
+                                                        <div class="service-content">
+                                                            <h3 class="service-title-large"><a href="">Custom Displays & Panels</a></h3>
+                                                            <p>Production counters, customized panels, and digital displays for precise industrial monitoring and automation.</p>
+                                                            <a href="" class="site-button site-btn-effect">View All</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- COLUMNS 9 --> 
+                                                <div class="item ">
+                                                    <div class="service-box-style2">
+                                                        <div class="service-media">
+                                                            <img src="images/Hydrostatic Level Transmitters.jpg" alt="">
+                                                        </div>
+                                                        <div class="service-content">
+                                                            <h3 class="service-title-large"><a href="">Hydrostatic Level Transmitters</a></h3>
+                                                            <p>Accurate hydrostatic level transmitters for liquid level measurement in industrial applications.</p>
+                                                            <a href="" class="site-button site-btn-effect">View All</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- COLUMNS 10 --> 
+                                                <div class="item ">
+                                                    <div class="service-box-style2">
+                                                        <div class="service-media">
+                                                            <img src="images/Advertising LED Wall.jpg" alt="">
+                                                        </div>
+                                                        <div class="service-content">
+                                                            <h3 class="service-title-large"><a href="">Advertising LED Wall</a></h3>
+                                                            <p>Input via Mobile/LAN/Wifi, 230V DC, Dot Matrix Modules P1-P10, Hanging/Wall/Stand, MS Cabinet, Custom Size.</p>
+                                                            <a href="" class="site-button site-btn-effect">View All</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                
+        
+                                                            
+                                        
+                                            </div>
+                                        </div>
+
+                                    </div>  
+
+                                </div>
+                            </div>                              
+                        </div>
+                    </div>
+            </div>
+
+
+
+
+
             <!-- ABOUT SECTION  SECTION END -->   
 
-                        <div class="section-full p-t80 p-b50  overlay-wraper bg-cover bg-no-repeat" style="background-image:url(images/background/bg-5.jpg);">
+                        <!-- <div class="section-full p-t80 p-b50  overlay-wraper bg-cover bg-no-repeat" style="background-image:url(images/background/bg-5.jpg);">
 				<div class="overlay-main site-bg-secondry opacity-07"></div>                                       
 
                         <div class="container">
-                            <!-- TITLE START-->
+                      
                             <div class="section-head center wt-small-separator-outer text-center text-white">
                                 <div class="wt-small-separator site-text-primary">
                                     <div  class="sep-leaf-left"></div>
@@ -1015,8 +1330,7 @@
                                 </div>
                                 <h2>We've Done Lot's Projects Let's Check Some Here</h2>
                             </div>
-                            <!-- TITLE END--> 
-
+                        
                             <div class="section-content">
                                 <div class="image-scroll-container">
 
@@ -1070,7 +1384,7 @@
                                     <h4>Advertising LED Wall</h4>
                                 </div>
 
-                                <!-- Duplicate items for infinite loop effect -->
+                              
                                 <div class="image-card">
                                     <img src="images/electromagnetic.jpg" alt="Electromagnetic Flow Meters">
                                     <h4>Electromagnetic Flow Meters</h4>
@@ -1086,7 +1400,7 @@
                                                                                         
                        </div>
 
-                    </div>
+                    </div> -->
   
             <!-- VIDEO SECTION START -->
             <!-- <div class="section-full video2-counter-section p-t80 p-b40  overlay-wraper bg-cover bg-no-repeat" style="background-image:url(images/background/bg-2.jpg);">
@@ -1703,13 +2017,71 @@
                                     <h3 class="widget-title" style="color: white;">About Us</h3>
                                    <p>Founded in 2018 in Pune, Ptrans And Controls is a trusted manufacturer and exporter of temperature sensors, controllers, indicators, data loggers, and automation solutions. With quality, affordability, and timely delivery, we have built a strong client base under the leadership of our CEO, Mr. Kundan Chaudhari.</p>
                                  </div>
-                                <div class="widget recent-posts-entry">
-                                   <ul class="widget_address"> 
-                                        <li><i class="fa fa-map-marker white-icon"></i>Plot No.5, Survey No. 47, Near Mudra Hill Top Hotel, Mangadewadi - Kolewadi Road, Mangadewadi, PUNE - 411046, INDIA</li>
-                                        <li><i class="fa fa-envelope"></i>ptransandcontrols@gmail.com</li>
-                                        <li> <i class="fa fa-phone"></i>+91 8329287300 | +91 9860868183</li>
-                                    </ul>  
+                                <div class="contact-widget">
+                                    <ul class="contact-list">
+                                        <li>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Plot No.5, Survey No. 47, Near Mudra Hill Top Hotel, Mangadewadi - Kolewadi Road, Mangadewadi, PUNE - 411046, INDIA
+                                        </li>
+                                        <li>
+                                        <i class="fa-solid fa-envelope-open-text"></i>
+                                        ptransandcontrols@gmail.com
+                                        </li>
+                                        <li>
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                        +91 8329287300 | +91 9860868183
+                                        </li>
+                                    </ul>
                                 </div>
+
+<style>
+
+/* ===== Contact Widget ===== */
+.contact-widget {
+  color: #fff;
+  padding: 15px 0;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.contact-list i {
+  color: #ffffff;
+  font-size: 18px;
+  margin-right: 10px;
+  margin-top: 3px;
+  transition: color 0.3s ease;
+}
+
+.contact-list li:hover i {
+  color: #3e8ef7;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .contact-list li {
+    font-size: 14px;
+  }
+  .contact-list i {
+    font-size: 16px;
+  }
+}
+</style>
+
+
+<!-- Font Awesome (ensure this is in your <head>) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
                                 <!-- Font Awesome CDN -->
                                             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -1732,11 +2104,11 @@
                                     <div class="widget widget_services">
                                         <h3 class="widget-title" style="color: white;">Useful links</h3>
                                         <ul>
-                                             <li><a href="index-2.html">Home</a><a href="">About</a></li>
+                                             <li><a href="index-2.html">Home</a><a href="aboutus.html">About</a></li>
                                             <!-- <li></li> -->
-                                            <li><a href="">Services</a><a href="">Project</a></li>
+                                            <li><a href="">Products</a><a href="">Our Recognition</a></li>
                                             <!-- <li></li> -->
-                                            <li><a href="clients.html">Our clients</a><a href="contact-1.html">Contact</a></li>
+                                            <li><a href="clients.html">Our Clients</a><a href="contact-1.html">Contact</a></li>
                                             <!-- <li></li> -->
                                         </ul>
                                     </div>
@@ -1746,9 +2118,9 @@
                                     <div class="widget widget_services">
                                         <h3 class="widget-title" style="color: white;">Our Services</h3>
                                         <ul>
-                                            <li><a href="s-oilgas.html">Heating Service</a><a href="s-chemical.html">Installation</a></li>
-                                            <li><a href="s-chemical.html">Quality Testing</a><a href="s-agricultural.html">Compressure</a></li>
-                                            <li><a href="s-mechanical.html">Maintanence</a><a href="s-agricultural.html">Cooler Cleaning</a></li>
+                                            <li><a href="">Heating Service</a><a href="">Installation</a></li>
+                                            <li><a href="">Quality Testing</a><a href="">Compressure</a></li>
+                                            <li><a href="">Maintanence</a><a href="">Cooler Cleaning</a></li>
                                             <!-- <li><a href="s-civil.html">Manufacturing</a><a href="s-civil.html">Civil Engineering</a></li>
                                             <li><a href="s-automotive.html">Mechanical </a><a href="s-automotive.html">Auto Motive  </a></li> -->
                                         </ul>

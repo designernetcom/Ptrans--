@@ -2080,7 +2080,7 @@ ol.list-num-count.list-outline-none>li:before {
 }
 
 .m-b30 {
-	margin-bottom: 30px;
+	margin-bottom: -70px;
 }
 
 .m-b40 {
@@ -2629,6 +2629,8 @@ ol.list-num-count.list-outline-none>li:before {
 
 .bg-gray {
 	background-color: #eff3f6;
+	padding-top: 1px;
+    padding-bottom: 5px;
 }
 
 .bg-gray-light {
